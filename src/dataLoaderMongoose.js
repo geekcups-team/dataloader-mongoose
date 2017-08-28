@@ -1,5 +1,5 @@
 const mapDataToHash = data => (
-  data.reduce((item, acc) => {
+  data.reduce((acc, item) => {
     acc[item._id.toString()] = item; // eslint-disable-line no-underscore-dangle
     return acc;
   }, {})

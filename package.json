@@ -1,6 +1,6 @@
 {
   "name": "dataloader-mongoose",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Default mongoose loader for Facebook dataloader https://github.com/facebook/dataloader",
   "main": "dist/index.js",
   "scripts": {
