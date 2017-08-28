@@ -1,0 +1,17 @@
+{
+  "presets": [
+    ["env", {
+      "targets": {
+         "node": "current"
+      },
+      "debug": true
+    }],
+  ],
+  "plugins": [
+    ["transform-object-rest-spread",
+      {
+        "useBuiltIns": true
+      }
+    ],
+  ]
+}

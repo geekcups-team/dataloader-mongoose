@@ -1,0 +1,36 @@
+{
+  "name": "dataloader-mongoose",
+  "version": "0.0.1",
+  "description": "Default mongoose loader for Facebook dataloader https://github.com/facebook/dataloader",
+  "main": "dist/index.js",
+  "scripts": {
+    "lint": "eslint src test",
+    "build:source": "rimraf dist/ && babel src/ --out-dir dist/",
+    "build:tests": "rimraf test-dist/ && babel test/ --out-dir test-dist/",
+    "clean": "rimraf dist/ && rimraf test-dist/",
+    "build": "npm run build:source && npm run build:tests",
+    "test": "node node_modules/mocha/bin/mocha --reporter spec test-dist/*",
+    "prepublish": "npm run build:source"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geekcups-team/dataloader-mongoose.git"
+  },
+  "author": "Andrea Beggiato <andrea.beggiato@geekcups.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/geekcups-team/dataloader-mongoose/issues"
+  },
+  "homepage": "https://github.com/geekcups-team/dataloader-mongoose#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^7.2.3",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "eslint": "^4.5.0",
+    "eslint-config-airbnb-base": "^11.3.2",
+    "eslint-plugin-import": "^2.7.0",
+    "rimraf": "^2.6.1"
+  }
+}
